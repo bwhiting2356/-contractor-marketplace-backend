@@ -14,7 +14,7 @@ public interface ProjectRepository extends JpaRepository<Project, Long> {
   Optional<Project> findById(long projectId);
 
   @Query(
-    value = "SELECT * FROM project WHERE deadline < :currentTime AND project_status = 0",
+    value = "SELECT * FROM project WHERE project_status = 0 AND deadline <= :currentTime", // deadline < :currentTime AND  WHERE deadline < :currentTime
     nativeQuery = true
   )
   List<Project> findExpiredOpenProjects(@Param("currentTime") Date currentTime);

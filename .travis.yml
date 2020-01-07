@@ -1,0 +1,18 @@
+language: java
+
+branches:
+  only:
+    - master
+jdk:
+  - openjdk8
+script:
+  - mvn test
+deploy:
+  provider: heroku
+  api-key:
+    secure: $HEROKU_API_KEY
+  app: project-marketplace
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'

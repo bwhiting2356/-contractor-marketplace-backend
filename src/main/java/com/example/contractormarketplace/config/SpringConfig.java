@@ -12,7 +12,7 @@ import java.util.List;
 @Configuration
 @EnableScheduling
 public class SpringConfig {
-  public static final int INTERVAL =  1000; // TODO: put back to one minute..  1000 * 60; // one minute
+  public static final int INTERVAL =  2000 * 60; // TODO: put back to one minute..  1000 * 60; // one minute
 
   @Autowired
   MarketplaceService marketplaceService;
