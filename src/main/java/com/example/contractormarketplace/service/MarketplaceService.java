@@ -111,7 +111,7 @@ public class MarketplaceService {
       of the other min value minus one penny, but not below zero
     */
       BigDecimal secondLowestMinMinusOnePenny = secondLowestBid.getMin().subtract(BigDecimal.valueOf(0.01));
-      lowestBid.setFinalPrice(secondLowestMinMinusOnePenny.min(BigDecimal.ZERO));
+      lowestBid.setFinalPrice(secondLowestMinMinusOnePenny.max(BigDecimal.ZERO));
       lowestBid.setWin(true);
       bidRepository.save(lowestBid);
     }

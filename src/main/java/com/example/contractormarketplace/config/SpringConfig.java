@@ -18,7 +18,5 @@ public class SpringConfig {
   @Scheduled(fixedDelay = INTERVAL)
   public void scheduleFixedDelayTask() {
     marketplaceService.closeAllOpenExpiredProjects();
-    System.out.println(
-      "Fixed delay task - " + System.currentTimeMillis() / 1000);
   }
 }
