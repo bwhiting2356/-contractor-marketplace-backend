@@ -69,8 +69,6 @@ public class MarketplaceService {
 
   public void closeAllOpenExpiredProjects() {
     List<Project> openExpiredProjects = findExpiredOpenProjects();
-    System.out.println("openExpiredProjects");
-    System.out.println(openExpiredProjects);
     openExpiredProjects.forEach(project -> closeProject(project));
   }
 
