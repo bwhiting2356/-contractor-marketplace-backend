@@ -1,6 +1,6 @@
 ## Project Marketplace
 
-This is the back end repo for the contractor-project marketplace app. The corresponding backend repo is [here](https://github.com/bwhiting2356/contractor-marketplace-frontend)
+This is the back end repo for the contractor-project marketplace app. The corresponding front end repo is [here](https://github.com/bwhiting2356/contractor-marketplace-frontend)
 
 
 ### Tests
