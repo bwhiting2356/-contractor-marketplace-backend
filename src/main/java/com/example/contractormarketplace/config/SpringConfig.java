@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import java.util.List;
 
 @Configuration
-//@EnableScheduling
+@EnableScheduling
 public class SpringConfig {
   public static final int INTERVAL =  2000 * 60; // TODO: put back to one minute..  1000 * 60; // one minute
 
